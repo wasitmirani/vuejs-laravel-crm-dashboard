@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\FrontendController;
+
 
 use App\Http\Controllers\frontend\social\GoogleController;
 use App\Http\Controllers\frontend\social\FacebookController;
@@ -27,7 +27,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 
-Route::get('/', [FrontendController::class, 'index'])->name('index');
+Route::get('/',function(){
+    return redirect()->route('login');
+})->name('index');
 
 Route::get('auth/facebook', [FacebookController::class, 'facebookRedirect'])->name('login.fb');
 
