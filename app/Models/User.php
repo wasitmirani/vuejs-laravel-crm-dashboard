@@ -18,9 +18,9 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $guarded=[];
-    protected $appends = [
-        'profile_photo_url',
-    ];
+    // protected $appends = [
+    //     'profile_photo_url',
+    // ];
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -29,6 +29,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password',
         'remember_token',
+        'token'
     ];
 
     /**

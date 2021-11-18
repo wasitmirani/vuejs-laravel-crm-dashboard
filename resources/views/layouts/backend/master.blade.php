@@ -45,7 +45,7 @@
             <!-- Left Sidebar End -->
 
 
-
+            @dd(request()->bearerToken())
             <!-- ============================================================== -->
             <!-- Start right Content here -->
             <!-- ============================================================== -->
@@ -207,7 +207,7 @@
           window.primarycolor="#1e204f";
 // window.appname={!! json_encode(config('app.name'),true)!!};
      @auth
-        
+
           window.user = [];
          window.permissions = [];
 
@@ -252,7 +252,7 @@
         <script src="{{asset('assets/js/pages/dashboard.init.js')}}"></script>
                <!-- echarts js -->
 
-   
+
         <script src="{{asset('assets/libs/echarts/echarts.min.js')}}"></script>
         <!-- echarts init -->
         <script src="{{asset('assets/js/pages/echarts.init.js')}}"></script>
