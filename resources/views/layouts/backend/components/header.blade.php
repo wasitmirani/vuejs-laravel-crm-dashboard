@@ -240,7 +240,9 @@
 
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                    {{-- <img  src="assets/images/users/avatar-1.jpg" alt="Header Avatar"> --}}
+                    <avatar-component name="{{auth()->user()->name}}" >
+                    </avatar-component>
                     <span class="d-none d-xl-inline-block ms-1 fw-medium">{{auth()->user()->name}}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>

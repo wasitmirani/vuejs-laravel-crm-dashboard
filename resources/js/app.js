@@ -11,6 +11,7 @@ import router from "./router";
 import Vuesax from 'vuesax'
 import 'vuesax/dist/vuesax.css'
 import Swal from 'sweetalert2'
+import Vue from "vue";
 
 window.Swal = Swal;
 
@@ -21,6 +22,9 @@ Vue.use(Vuesax);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+//  const files = require.context('./', true, /\.vue$/i)
+//  files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+Vue.component('avatar-component', require('./components/backend/components/avatarComponent.vue').default);
 
 const app = new Vue({
     el: '#app',
