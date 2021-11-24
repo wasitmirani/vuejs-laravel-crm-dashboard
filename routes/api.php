@@ -19,8 +19,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('admin')->group(function () {
+Route::middleware('auth:sanctum')->prefix('admin')->group(function () {
 
-    Route::resource('service', ServiceController::class);
-    
+
+
+    Route::prefix('management')->group(function () {
+        Route::resource('user', UserController::class);
+        Route::post('remove-all/users',[UserController::class,'removeAllUsers']);
+        Route::resource('role', RoleController::class);
+        Route::post('remove-all/roles',[UserController::class,'removeAllRoles']);
+        Route::resource('permission', PermissionController::class);
+        Route::post('/remove-all/permissions',[PermissionController::class,'removeAllPermissions']);
+    });
 });
