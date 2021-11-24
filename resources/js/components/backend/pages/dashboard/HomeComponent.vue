@@ -4,12 +4,12 @@
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0 font-size-18">Welcome !</h4>
+                <h4 class="mb-sm-0 font-size-18">Hi, {{auth_user.name}} ! </h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Welcome !</li>
+                        <li class="breadcrumb-item active">Welcome, {{auth_user.name}}!</li>
                     </ol>
                 </div>
 
@@ -20,22 +20,25 @@
 
     <div class="row">
        <div class="col-xl-3 col-md-6">
-        <minichart title="Demoe" :index="1"></minichart>
+        <minichart title="Orders" :index="1" :series="[{title:'All Orders',value:100},{title:'New Orders',value:20}]"  label="Since last week"></minichart>
         </div>
         <div class="col-xl-3 col-md-6">
-        <minichart title="Test" :index="2"></minichart>
+        <minichart title="Members" :index="2" :series="[{title:'All Members',value:500},{title:'New Members',value:10}]" label="Since last month"></minichart>
         </div>
         <div class="col-xl-3 col-md-6">
-        <minichart title="Test" :index="3"></minichart>
+        <minichart title="Customers" :index="3" :series="[{title:'All Customers',value:100},{title:'New Members',value:30}]" label="Since last week"></minichart>
         </div>
         <div class="col-xl-3 col-md-6">
-        <minichart title="Test" :index="4"></minichart>
+          <minichart title="Customers" :index="4" :series="[{title:'All Subscribers',value:340},{title:'New Members',value:90}]" label="Since last week"></minichart>
         </div>
     </div><!-- end row-->
      <div class="row">
         <div class="col-md-6">
-           <epieChart></epieChart>
+           <epieChart title="Orders" label="Users" :index="1" :data="[{value: 335,name:'Users'},{value: 200,name:'Members'},{value: 40,name:'Customers'},{value: 80,name:'Subscribers'},{value: 20,name:'Daily'}]" ></epieChart>
         </div>
+         <div class="col-md-6">
+             <edoughtnutChart index="1" :data="[{value: 335,name:'Users'},{value: 335,name:'New Users'}]"></edoughtnutChart>
+         </div>
      </div>
     <div class="row">
         <div class="col-xl-8">
@@ -66,7 +69,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-8">
                             <div>
-                                <div id="market-overview" data-colors='["#6951ce", "#f04d80"]' class="apex-charts"></div>
+                                <div id="market-overview" data-colors='["#33c38e ", "#1c84ee"]' class="apex-charts"></div>
                             </div>
                         </div>
                         <div class="col-xl-4">
@@ -191,7 +194,7 @@
                         </div>
                     </div>
 
-                    <div id="sales-by-locations" data-colors='["#f04d80"]' style="height: 253px"></div>
+                    <div id="sales-by-locations" data-colors='["#10dae6"]' style="height: 253px"></div>
 
                     <div class="px-2 py-2">
                         <p class="mb-1">USA <span class="float-end">75%</span></p>
@@ -883,11 +886,13 @@
 <script>
 import minichart from "../../components/miniChartComponent"
 import epieChart from "../../components/charts/epieChartComponent";
+import edoughtnutChart from "../../components/charts/edoughnutChartComponent.vue";
     export default {
-        components: {minichart,epieChart},
+        components: {minichart,epieChart,edoughtnutChart},
         data() {
             return {
-            prevRoute: null
+            prevRoute: null,
+            auth_user:{},
             };
         },
         beforeRouteEnter(to, from, next) {
@@ -898,6 +903,8 @@ import epieChart from "../../components/charts/epieChartComponent";
         })
         },
         mounted() {
+            this.auth_user=user;
+
             console.log('Component mounted.')
         }
     }

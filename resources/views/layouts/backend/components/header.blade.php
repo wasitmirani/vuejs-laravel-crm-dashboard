@@ -66,7 +66,7 @@
                         <img src="assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span>
                     </a>
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
+                    {{-- <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
                         <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                     </a>
 
@@ -83,7 +83,7 @@
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
                         <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
 
@@ -94,7 +94,7 @@
                 </button>
             </div>
 
-            <div class="dropdown d-none d-lg-inline-block ms-1">
+            {{-- <div class="dropdown d-none d-lg-inline-block ms-1">
                 <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i data-feather="grid" class="icon-lg"></i>
                 </button>
@@ -143,8 +143,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> --}}
+{{-- 
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i data-feather="bell" class="icon-lg"></i>
@@ -230,7 +230,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item right-bar-toggle me-2">
@@ -241,7 +241,7 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item bg-soft-light border-start border-end" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
-                    <span class="d-none d-xl-inline-block ms-1 fw-medium">Paul K.</span>
+                    <span class="d-none d-xl-inline-block ms-1 fw-medium">{{auth()->user()->name}}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">

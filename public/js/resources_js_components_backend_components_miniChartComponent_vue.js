@@ -36,13 +36,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['title', 'index'],
+  props: ['title', 'index', 'label', 'series'],
   methods: {
     loadMiniChart: function loadMiniChart() {
       var barchartColors = getChartColorsArray("#mini-chart" + this.index);
       var options = {
-        series: [60, 40],
+        labels: [this.series[0].title, this.series[1].title],
+        series: [this.series[0].value, this.series[1].value],
         chart: {
           type: "donut",
           height: 115
@@ -161,9 +163,26 @@ var render = function () {
             [_vm._v("Total " + _vm._s(_vm.title))]
           ),
           _vm._v(" "),
-          _vm._m(0),
+          _c("h4", { staticClass: "mb-3" }, [
+            _c(
+              "span",
+              {
+                staticClass: "counter-value",
+                attrs: { "data-target": this.series[0].value },
+              },
+              [_vm._v(_vm._s(this.series[0].value))]
+            ),
+          ]),
           _vm._v(" "),
-          _vm._m(1),
+          _c("div", { staticClass: "text-nowrap" }, [
+            _c("span", { staticClass: "badge bg-soft-primary text-primary" }, [
+              _vm._v(_vm._s(this.series[1].value)),
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
+              _vm._v(_vm._s(_vm.label)),
+            ]),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "flex-shrink-0 text-end dash-widget" }, [
@@ -171,7 +190,7 @@ var render = function () {
             staticClass: "apex-charts",
             attrs: {
               id: "mini-chart" + _vm.index,
-              "data-colors": '["#6951ce", "#f04d80"]',
+              "data-colors": '["#33c38e ", "#1c84ee"]',
             },
           }),
         ]),
@@ -179,36 +198,7 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "mb-3" }, [
-      _vm._v("\n               $"),
-      _c(
-        "span",
-        { staticClass: "counter-value", attrs: { "data-target": "354.5" } },
-        [_vm._v("0")]
-      ),
-      _vm._v("k\n            "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-nowrap" }, [
-      _c("span", { staticClass: "badge bg-soft-warning text-warning" }, [
-        _vm._v("+$20.9k"),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
-        _vm._v("Since last week"),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

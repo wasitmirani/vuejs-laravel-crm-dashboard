@@ -23,10 +23,7 @@ const routes = [
         path: "/users", component: () => setComponent("user/Users"), name: "Users",
         meta: { permissions: "users-view" }
     },
-    {
-        path: "/services", component: () => setComponent("service/Services"), name: "Services",
-        meta: { permissions: "services-view" }
-    },
+  
 
 
 ];

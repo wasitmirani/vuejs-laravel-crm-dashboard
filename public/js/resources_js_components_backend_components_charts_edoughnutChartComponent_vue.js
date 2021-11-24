@@ -25,8 +25,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['title', 'datalabel', 'data'],
+  props: ["title", "datalabel", "data"],
   data: function data() {
     return {
       option: null
@@ -194,7 +198,7 @@ var staticRenderFns = [
         attrs: {
           id: "doughnut-chart",
           "data-colors":
-            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#f04d80"]',
+            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]',
         },
       }),
     ])

@@ -1,6 +1,96 @@
 "use strict";
 (self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_components_backend_pages_dashboard_HomeComponent_vue"],{
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["title", "datalabel", "data"],
+  data: function data() {
+    return {
+      option: null
+    };
+  },
+  methods: {
+    doughnutChart: function doughnutChart() {
+      var doughnutColors = getChartColorsArray("#doughnut-chart");
+      dom = document.getElementById("doughnut-chart");
+      myChart = echarts.init(dom);
+      app = {};
+      this.option = null, this.option = {
+        tooltip: {
+          trigger: "item",
+          formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+          orient: "vertical",
+          x: "left",
+          data: this.datalabel,
+          textStyle: {
+            color: "#858d98"
+          }
+        },
+        color: doughnutColors,
+        series: [{
+          name: "Total sales",
+          type: "pie",
+          radius: ["50%", "70%"],
+          avoidLabelOverlap: false,
+          label: {
+            normal: {
+              show: false,
+              position: "center"
+            },
+            emphasis: {
+              show: true,
+              textStyle: {
+                fontSize: "30",
+                fontWeight: "bold"
+              }
+            }
+          },
+          labelLine: {
+            normal: {
+              show: false
+            }
+          },
+          data: this.data
+        }]
+      }, this.option && "object" == (typeof this.option === "undefined" ? "undefined" : _typeof(this.option)) && myChart.setOption(this.option, true);
+    }
+  },
+  mounted: function mounted() {
+    this.doughnutChart();
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=script&lang=js& ***!
@@ -25,10 +115,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-props: ['title', 'datalabel', 'data', 'label', 'index'];
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ["title", "labels", "data", "label", "index"],
   data: function data() {
     return {
       option: null
@@ -36,8 +124,8 @@ props: ['title', 'datalabel', 'data', 'label', 'index'];
   },
   methods: {
     loadPieChart: function loadPieChart() {
-      var pieColors = getChartColorsArray("#pie-chart");
-      dom = document.getElementById("pie-chart");
+      var pieColors = getChartColorsArray("#pie-chart" + this.index);
+      dom = document.getElementById("pie-chart" + this.index);
       myChart = echarts.init(dom);
       app = {};
       this.option = null, this.option = {
@@ -48,14 +136,14 @@ props: ['title', 'datalabel', 'data', 'label', 'index'];
         legend: {
           orient: "vertical",
           left: "left",
-          data: this.datalabel,
+          data: this.labels,
           textStyle: {
             color: "#858d98"
           }
         },
         color: pieColors,
         series: [{
-          name: 'Total ' + this.label,
+          name: "Total " + this.label,
           type: "pie",
           radius: "55%",
           center: ["50%", "60%"],
@@ -73,7 +161,7 @@ props: ['title', 'datalabel', 'data', 'label', 'index'];
   },
   mounted: function mounted() {
     this.loadPieChart();
-    console.log('Component mounted.Pie');
+    console.log("Component mounted.Pie", this.index);
   } // mounted(){
   // this.loadPieChart();
   // }
@@ -133,13 +221,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['title', 'index'],
+  props: ['title', 'index', 'label', 'series'],
   methods: {
     loadMiniChart: function loadMiniChart() {
       var barchartColors = getChartColorsArray("#mini-chart" + this.index);
       var options = {
-        series: [60, 40],
+        labels: [this.series[0].title, this.series[1].title],
+        series: [this.series[0].value, this.series[1].value],
         chart: {
           type: "donut",
           height: 115
@@ -176,6 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _components_miniChartComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/miniChartComponent */ "./resources/js/components/backend/components/miniChartComponent.vue");
 /* harmony import */ var _components_charts_epieChartComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/charts/epieChartComponent */ "./resources/js/components/backend/components/charts/epieChartComponent.vue");
+/* harmony import */ var _components_charts_edoughnutChartComponent_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/charts/edoughnutChartComponent.vue */ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue");
 //
 //
 //
@@ -1058,16 +1149,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     minichart: _components_miniChartComponent__WEBPACK_IMPORTED_MODULE_0__["default"],
-    epieChart: _components_charts_epieChartComponent__WEBPACK_IMPORTED_MODULE_1__["default"]
+    epieChart: _components_charts_epieChartComponent__WEBPACK_IMPORTED_MODULE_1__["default"],
+    edoughtnutChart: _components_charts_edoughnutChartComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
-      prevRoute: null
+      prevRoute: null,
+      auth_user: {}
     };
   },
   beforeRouteEnter: function beforeRouteEnter(to, from, next) {
@@ -1078,9 +1175,48 @@ __webpack_require__.r(__webpack_exports__);
     });
   },
   mounted: function mounted() {
+    this.auth_user = user;
     console.log('Component mounted.');
   }
 });
+
+/***/ }),
+
+/***/ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/backend/components/charts/edoughnutChartComponent.vue ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true& */ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true&");
+/* harmony import */ var _edoughnutChartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edoughnutChartComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _edoughnutChartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "19445222",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/backend/components/charts/edoughnutChartComponent.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
@@ -1198,6 +1334,21 @@ component.options.__file = "resources/js/components/backend/pages/dashboard/Home
 
 /***/ }),
 
+/***/ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************!*\
+  !*** ./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_edoughnutChartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./edoughnutChartComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_edoughnutChartComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************!*\
   !*** ./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=script&lang=js& ***!
@@ -1240,6 +1391,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HomeComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/pages/dashboard/HomeComponent.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true&":
+/*!**********************************************************************************************************************************!*\
+  !*** ./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true& ***!
+  \**********************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_edoughnutChartComponent_vue_vue_type_template_id_19445222_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true&");
+
 
 /***/ }),
 
@@ -1291,6 +1458,56 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/edoughnutChartComponent.vue?vue&type=template&id=19445222&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "card" }, [
+      _c("div", { staticClass: "card-header" }, [
+        _c("h4", { staticClass: "card-title mb-0" }, [
+          _vm._v(_vm._s(_vm.title) + " Chart"),
+        ]),
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", {
+        staticClass: "e-charts",
+        attrs: {
+          id: "doughnut-chart",
+          "data-colors":
+            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]',
+        },
+      }),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=template&id=15320d4d&":
 /*!********************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/backend/components/charts/epieChartComponent.vue?vue&type=template&id=15320d4d& ***!
@@ -1310,7 +1527,7 @@ var render = function () {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h4", { staticClass: "card-title mb-0" }, [
-          _vm._v(" " + _vm._s(_vm.title) + " Chart"),
+          _vm._v(_vm._s(_vm.title) + " Chart"),
         ]),
       ]),
       _vm._v(" "),
@@ -1320,7 +1537,7 @@ var render = function () {
           attrs: {
             id: "pie-chart" + _vm.index,
             "data-colors":
-              '["#34c38f", "#f04d80", "#16daf1", "#ffcc5a", "#6951ce"]',
+              '["#34c38f", "#0a068c", "#16daf1", "#ffcc5a", "#6951ce"]',
           },
         }),
       ]),
@@ -1359,9 +1576,26 @@ var render = function () {
             [_vm._v("Total " + _vm._s(_vm.title))]
           ),
           _vm._v(" "),
-          _vm._m(0),
+          _c("h4", { staticClass: "mb-3" }, [
+            _c(
+              "span",
+              {
+                staticClass: "counter-value",
+                attrs: { "data-target": this.series[0].value },
+              },
+              [_vm._v(_vm._s(this.series[0].value))]
+            ),
+          ]),
           _vm._v(" "),
-          _vm._m(1),
+          _c("div", { staticClass: "text-nowrap" }, [
+            _c("span", { staticClass: "badge bg-soft-primary text-primary" }, [
+              _vm._v(_vm._s(this.series[1].value)),
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
+              _vm._v(_vm._s(_vm.label)),
+            ]),
+          ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "flex-shrink-0 text-end dash-widget" }, [
@@ -1369,7 +1603,7 @@ var render = function () {
             staticClass: "apex-charts",
             attrs: {
               id: "mini-chart" + _vm.index,
-              "data-colors": '["#6951ce", "#f04d80"]',
+              "data-colors": '["#33c38e ", "#1c84ee"]',
             },
           }),
         ]),
@@ -1377,36 +1611,7 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h4", { staticClass: "mb-3" }, [
-      _vm._v("\n               $"),
-      _c(
-        "span",
-        { staticClass: "counter-value", attrs: { "data-target": "354.5" } },
-        [_vm._v("0")]
-      ),
-      _vm._v("k\n            "),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-nowrap" }, [
-      _c("span", { staticClass: "badge bg-soft-warning text-warning" }, [
-        _vm._v("+$20.9k"),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
-        _vm._v("Since last week"),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -1429,40 +1634,150 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "page-title-box d-sm-flex align-items-center justify-content-between",
+          },
+          [
+            _c("h4", { staticClass: "mb-sm-0 font-size-18" }, [
+              _vm._v("Hi, " + _vm._s(_vm.auth_user.name) + " ! "),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "page-title-right" }, [
+              _c("ol", { staticClass: "breadcrumb m-0" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c("li", { staticClass: "breadcrumb-item active" }, [
+                  _vm._v("Welcome, " + _vm._s(_vm.auth_user.name) + "!"),
+                ]),
+              ]),
+            ]),
+          ]
+        ),
+      ]),
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c(
         "div",
         { staticClass: "col-xl-3 col-md-6" },
-        [_c("minichart", { attrs: { title: "Demoe", index: 1 } })],
+        [
+          _c("minichart", {
+            attrs: {
+              title: "Orders",
+              index: 1,
+              series: [
+                { title: "All Orders", value: 100 },
+                { title: "New Orders", value: 20 },
+              ],
+              label: "Since last week",
+            },
+          }),
+        ],
         1
       ),
       _vm._v(" "),
       _c(
         "div",
         { staticClass: "col-xl-3 col-md-6" },
-        [_c("minichart", { attrs: { title: "Test", index: 2 } })],
+        [
+          _c("minichart", {
+            attrs: {
+              title: "Members",
+              index: 2,
+              series: [
+                { title: "All Members", value: 500 },
+                { title: "New Members", value: 10 },
+              ],
+              label: "Since last month",
+            },
+          }),
+        ],
         1
       ),
       _vm._v(" "),
       _c(
         "div",
         { staticClass: "col-xl-3 col-md-6" },
-        [_c("minichart", { attrs: { title: "Test", index: 3 } })],
+        [
+          _c("minichart", {
+            attrs: {
+              title: "Customers",
+              index: 3,
+              series: [
+                { title: "All Customers", value: 100 },
+                { title: "New Members", value: 30 },
+              ],
+              label: "Since last week",
+            },
+          }),
+        ],
         1
       ),
       _vm._v(" "),
       _c(
         "div",
         { staticClass: "col-xl-3 col-md-6" },
-        [_c("minichart", { attrs: { title: "Test", index: 4 } })],
+        [
+          _c("minichart", {
+            attrs: {
+              title: "Customers",
+              index: 4,
+              series: [
+                { title: "All Subscribers", value: 340 },
+                { title: "New Members", value: 90 },
+              ],
+              label: "Since last week",
+            },
+          }),
+        ],
         1
       ),
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-6" }, [_c("epieChart")], 1),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("epieChart", {
+            attrs: {
+              title: "Orders",
+              label: "Users",
+              index: 1,
+              data: [
+                { value: 335, name: "Users" },
+                { value: 200, name: "Members" },
+                { value: 40, name: "Customers" },
+                { value: 80, name: "Subscribers" },
+                { value: 20, name: "Daily" },
+              ],
+            },
+          }),
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-md-6" },
+        [
+          _c("edoughtnutChart", {
+            attrs: {
+              index: "1",
+              data: [
+                { value: 335, name: "Users" },
+                { value: 335, name: "New Users" },
+              ],
+            },
+          }),
+        ],
+        1
+      ),
     ]),
     _vm._v(" "),
     _vm._m(1),
@@ -1475,34 +1790,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-12" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "page-title-box d-sm-flex align-items-center justify-content-between",
-          },
-          [
-            _c("h4", { staticClass: "mb-sm-0 font-size-18" }, [
-              _vm._v("Welcome !"),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "page-title-right" }, [
-              _c("ol", { staticClass: "breadcrumb m-0" }, [
-                _c("li", { staticClass: "breadcrumb-item" }, [
-                  _c("a", { attrs: { href: "javascript: void(0);" } }, [
-                    _vm._v("Dashboard"),
-                  ]),
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "breadcrumb-item active" }, [
-                  _vm._v("Welcome !"),
-                ]),
-              ]),
-            ]),
-          ]
-        ),
+    return _c("li", { staticClass: "breadcrumb-item" }, [
+      _c("a", { attrs: { href: "javascript: void(0);" } }, [
+        _vm._v("Dashboard"),
       ]),
     ])
   },
@@ -1532,7 +1822,7 @@ var staticRenderFns = [
                       },
                       [
                         _vm._v(
-                          "\r\n                                    ALL\r\n                                "
+                          "\n                                    ALL\n                                "
                         ),
                       ]
                     ),
@@ -1545,7 +1835,7 @@ var staticRenderFns = [
                       },
                       [
                         _vm._v(
-                          "\r\n                                    1M\r\n                                "
+                          "\n                                    1M\n                                "
                         ),
                       ]
                     ),
@@ -1558,7 +1848,7 @@ var staticRenderFns = [
                       },
                       [
                         _vm._v(
-                          "\r\n                                    6M\r\n                                "
+                          "\n                                    6M\n                                "
                         ),
                       ]
                     ),
@@ -1571,7 +1861,7 @@ var staticRenderFns = [
                       },
                       [
                         _vm._v(
-                          "\r\n                                    1Y\r\n                                "
+                          "\n                                    1Y\n                                "
                         ),
                       ]
                     ),
@@ -1587,7 +1877,7 @@ var staticRenderFns = [
                     staticClass: "apex-charts",
                     attrs: {
                       id: "market-overview",
-                      "data-colors": '["#6951ce", "#f04d80"]',
+                      "data-colors": '["#33c38e ", "#1c84ee"]',
                     },
                   }),
                 ]),
@@ -1606,7 +1896,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                                                1\r\n                                            "
+                              "\n                                                1\n                                            "
                             ),
                           ]
                         ),
@@ -1642,7 +1932,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                                                2\r\n                                            "
+                              "\n                                                2\n                                            "
                             ),
                           ]
                         ),
@@ -1678,7 +1968,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                                                3\r\n                                            "
+                              "\n                                                3\n                                            "
                             ),
                           ]
                         ),
@@ -1714,7 +2004,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                                                4\r\n                                            "
+                              "\n                                                4\n                                            "
                             ),
                           ]
                         ),
@@ -1750,7 +2040,7 @@ var staticRenderFns = [
                           },
                           [
                             _vm._v(
-                              "\r\n                                                5\r\n                                            "
+                              "\n                                                5\n                                            "
                             ),
                           ]
                         ),
@@ -1874,7 +2164,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", {
               staticStyle: { height: "253px" },
-              attrs: { id: "sales-by-locations", "data-colors": '["#f04d80"]' },
+              attrs: { id: "sales-by-locations", "data-colors": '["#10dae6"]' },
             }),
             _vm._v(" "),
             _c("div", { staticClass: "px-2 py-2" }, [
@@ -3353,7 +3643,7 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\r\n                                                        Hi there, How are you?\r\n                                                    "
+                                  "\n                                                        Hi there, How are you?\n                                                    "
                                 ),
                               ]),
                             ]),
@@ -3445,7 +3735,7 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\r\n                                                        Waiting for your reply.As I heve to go back soon. i have to travel long distance.\r\n                                                    "
+                                  "\n                                                        Waiting for your reply.As I heve to go back soon. i have to travel long distance.\n                                                    "
                                 ),
                               ]),
                             ]),
@@ -3533,7 +3823,7 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\r\n                                                        Hi, I am coming there in few minutes. Please wait!! I am in taxi right now.\r\n                                                    "
+                                  "\n                                                        Hi, I am coming there in few minutes. Please wait!! I am in taxi right now.\n                                                    "
                                 ),
                               ]),
                             ]),
@@ -3637,7 +3927,7 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\r\n                                                        Thank You very much, I am waiting here at StarBuck cafe.\r\n                                                    "
+                                  "\n                                                        Thank You very much, I am waiting here at StarBuck cafe.\n                                                    "
                                 ),
                               ]),
                             ]),
@@ -3733,7 +4023,7 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\r\n                                                        img-1.jpg & img-2.jpg images for a New Projects\r\n                                                    "
+                                  "\n                                                        img-1.jpg & img-2.jpg images for a New Projects\n                                                    "
                                 ),
                               ]),
                               _vm._v(" "),

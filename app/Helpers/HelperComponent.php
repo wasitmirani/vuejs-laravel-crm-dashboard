@@ -52,209 +52,42 @@ class HelperComponent
             [
                 "heading" => "Apps",
             ],
-            // [
-
-            //     "menu" => [
-            //         "title" => 'Ecommerce',
-            //         "icon" => "shopping-cart",
-            //         "sub_menu" => [
-            //             setSubMenu(
-            //                 "Categories",
-            //                 null,
-            //                 "categories-view",
-            //                 "/categories",
-            //             ),
-            //             setSubMenu(
-            //                 "Products",
-            //                 null,
-            //                 "products-view",
-            //                 "/products",
-            //             ),
-
-            //             setSubMenu(
-            //                 "Orders",
-            //                 null,
-            //                 "orders-view",
-            //                 "/orders",
-            //             ),
-
-            //         ]
-
-            //     ],
-
-            // ],
-             [
-
-                "menu" => [
-                    "title" => 'Orders',
-                    "icon" => "shopping-cart",
-                    "sub_menu" => [
-                        setSubMenu(
-                            "New Orders",
-                            null,
-                            "new-order-view",
-                            "/new-order",
-                        ),
-                        setSubMenu(
-                            "Accepted Orders",
-                            null,
-                            "accepted-orders-view",
-                            "/accepted-orders",
-                        ),
-
-                        setSubMenu(
-                            "Pending Orders",
-                            null,
-                            "pending-orders-view",
-                            "/pending-orders",
-                        ),
-                        setSubMenu(
-                            "Pre Orders",
-                            null,
-                            "pre-orders-view",
-                            "/pre-orders",
-                        ),
-                        setSubMenu(
-                            "Declined Orders",
-                            null,
-                            "declined-orders-view",
-                            "/declined-orders",
-                        ),
-                       setSubMenu(
-                            "Delivered Orders",
-                            null,
-                            "delivered-orders-view",
-                            "/Delivered-orders",
-                        ),
-
-                    ]
-
-                ],
-
-              ],
-              [
-
-                "menu" => [
-                    "title" => 'Members',
-                    "icon" => "users",
-                    "sub_menu" => [
-                        setSubMenu(
-                            "New Members",
-                            null,
-                            "new-members-view",
-                            "/new-members",
-                        ),
-                        setSubMenu(
-                            "Messages",
-                            null,
-                            "Messages-view",
-                            "/member/messages",
-                        ),
-
-                        setSubMenu(
-                            "Verifications Members",
-                            null,
-                            "verifications-members-view",
-                            "/members/verifications",
-                        ),
-                        setSubMenu(
-                            "Gold Members",
-                            null,
-                            "gold-members-view",
-                            "/gold-members",
-                        ),
-                       setSubMenu(
-                            "Queries & Alerts",
-                            null,
-                            "queries-members-view",
-                            "/queries-members",
-                        ),
-
-                    ]
-
-                ],
-
-              ],
-             [
-
-                "menu" => [
-                    "title" => 'Customers',
-                    "icon" => "users",
-                    "sub_menu" => [
-                        setSubMenu(
-                            "New Customers",
-                            null,
-                            "new-customers-view",
-                            "/new-customers",
-                        ),
-                        setSubMenu(
-                            "Messages",
-                            null,
-                            "customers-messages-view",
-                            "/customers/messages",
-                        ),
-
-                        setSubMenu(
-                            "Complaints",
-                            null,
-                            "complaints-customers-view",
-                            "/customers/complaints",
-                        ),
-                      
-                    ]
-
-                ],
-
-              ],
-             [
-
-                "menu" => [
-                    "title" => 'Subscribers',
-                    "icon" => "credit-card",
-                    "sub_menu" => [
-                        setSubMenu(
-                            "New Subscribers",
-                            null,
-                            "new-customers-view",
-                            "/new-customers",
-                        ),
-                        setSubMenu(
-                            "Current Subscribers",
-                            null,
-                            "customers-messages-view",
-                            "/customers/messages",
-                        ),
-
-                        setSubMenu(
-                            "Recurring Payments",
-                            null,
-                            "complaints-customers-view",
-                            "/customers/complaints",
-                        ),
-                        setSubMenu(
-                            "Cancelled Subscription",
-                            null,
-                            "complaints-customers-view",
-                            "/customers/complaints",
-                        ),
-                        setSubMenu(
-                            "Complaints",
-                            null,
-                            "complaints-customers-view",
-                            "/customers/complaints",
-                        ),
-                      
-                    ]
-
-                ],
-
-              ],
+           
+           
             [
-                "heading" => "Content",
+
+                "menu" => [
+                    "title" => 'Container',
+                    "icon" => "box",
+                    "sub_menu" => [
+                        setSubMenu(
+                            "Receive",
+                            null,
+                            "receive-view",
+                            "/container/receives",
+                        ),
+                        setSubMenu(
+                            "Stuffing",
+                            null,
+                            "stuffing-view",
+                            "/container/stuffing",
+                        ),
+                        setSubMenu(
+                            "Dispatch",
+                             null,
+                            "dispatch-view",
+                            "/container/dispatch",
+                        ),
+
+                    ]
+
+                ],
+
             ],
             [
-                "single_link" => setSingleLink("Services", "layers", "services-view", "/services"),
+                "single_link" => setSingleLink("Receipt Pallet GRN", "link", "services-view", "/logout"),
             ],
+             
             [
                 "heading" => "Tool",
             ],
@@ -284,6 +117,7 @@ class HelperComponent
                 ],
 
             ],
+
             [
                 "heading" => "Session",
             ],
