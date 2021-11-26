@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+use Laravel\Sanctum\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
@@ -40,4 +41,28 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function getThumbnailAttribute($value)
+    {
+        if(!empty($value))
+        return asset('/img/users/'.$value);
+        else
+        return asset('/img/users/default-profile.png');
+    }
+
+
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function userCreateOrUpdate($request,$type="create"){
+
+        if($type == 'create'){
+            return User::create($request);
+        }
+        else {
+            return User::where('id',$request['id'])->update($request);
+        }
+    }
 }

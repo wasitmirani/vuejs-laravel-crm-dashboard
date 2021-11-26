@@ -208,7 +208,7 @@
      @auth
 
           window.user = [];
-         window.permissions = [];
+         window.permissions = ['dashboard-view'];
 
      @else
          window.user = [];

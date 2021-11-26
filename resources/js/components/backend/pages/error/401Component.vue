@@ -7,15 +7,15 @@
                         <div class="col-lg-12">
                             <div class="text-center">
                                 <div class="row justify-content-center mb-5">
-                                    <div class="col-12">
-                                       <h3 class="mt-4">Unauthorized Action</h3>
-                                       <router-link to="/"  class="btn btn-primary waves-effect waves-light">Back to Dashboard</router-link>
+                                    <div class="col-12 mt-4">
+                                       <h3 class="mt-4">This action is unauthorized.</h3>
+                                       <router-link to="/"  class="btn mt-4 btn-primary waves-effect waves-light">Back to Dashboard</router-link>
                                     </div>
                                     <div class="col-sm-5">
-                                        <div class="maintenance-img">
+                                        <!-- <div class="maintenance-img">
                                             <img src="/icons/401.png" alt="" class="img-fluid mx-auto d-block">
-                                        </div>
-                                               <!-- <h3 class="mt-4">Unauthorized Action</h3> -->
+                                        </div> -->
+                                               <!-- <h3 class="mt-4">This action is unauthorized.</h3> -->
 
                                     </div>
 
@@ -88,7 +88,9 @@
 
 <script>
 export default {
+    mounted(){
 
+    }
 }
 </script>
 

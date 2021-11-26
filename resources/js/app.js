@@ -26,6 +26,13 @@ Vue.use(Vuesax);
 //  files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 Vue.component('avatar-component', require('./components/backend/components/avatarComponent.vue').default);
 
+Vue.directive('can', function(el, binding, vnode) {
+    if (permissions.indexOf(binding.value) !== -1) {
+        return vnode.elm.hidden = false;
+    } else {
+        return vnode.elm.hidden = true;
+    }
+})
 const app = new Vue({
     el: '#app',
     router,

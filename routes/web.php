@@ -39,3 +39,4 @@ Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('
 
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('callback.gmail');
 Route::get('privacy-policy', [FrontendController::class, 'privacyPolicy']);
+Route::get('/unauthorized', [DashboardController::class, 'unauthorized'])->name('unauthorized');

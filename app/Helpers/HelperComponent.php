@@ -16,12 +16,14 @@ class HelperComponent
             ],
             [
                 "heading" => "Management",
+
             ],
 
             [
 
                 "menu" => [
                     "title" => 'User Management',
+                    'can'=>'user-management-view',
                     "icon" => "user",
                     "sub_menu" => [
                         setSubMenu(
@@ -48,16 +50,17 @@ class HelperComponent
                 ],
 
             ],
-         
+
             [
                 "heading" => "Apps",
             ],
-           
-           
+
+
             [
 
                 "menu" => [
                     "title" => 'Container',
+                    'can'=>'container-view',
                     "icon" => "box",
                     "sub_menu" => [
                         setSubMenu(
@@ -87,7 +90,7 @@ class HelperComponent
             [
                 "single_link" => setSingleLink("Receipt Pallet GRN", "link", "services-view", "/logout"),
             ],
-             
+
             [
                 "heading" => "Tool",
             ],
@@ -95,6 +98,7 @@ class HelperComponent
 
                 "menu" => [
                     "title" => 'Settings',
+                    'can'=>'settings-view',
                     "icon" => "settings",
                     "sub_menu" => [
                         setSubMenu(

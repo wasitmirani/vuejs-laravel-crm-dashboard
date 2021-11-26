@@ -99,7 +99,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  mounted: function mounted() {}
+});
 
 /***/ }),
 
@@ -197,17 +199,17 @@ var render = function () {
                 _c("div", { staticClass: "row justify-content-center mb-5" }, [
                   _c(
                     "div",
-                    { staticClass: "col-12" },
+                    { staticClass: "col-12 mt-4" },
                     [
                       _c("h3", { staticClass: "mt-4" }, [
-                        _vm._v("Unauthorized Action"),
+                        _vm._v("This action is unauthorized."),
                       ]),
                       _vm._v(" "),
                       _c(
                         "router-link",
                         {
                           staticClass:
-                            "btn btn-primary waves-effect waves-light",
+                            "btn mt-4 btn-primary waves-effect waves-light",
                           attrs: { to: "/" },
                         },
                         [_vm._v("Back to Dashboard")]
@@ -216,7 +218,7 @@ var render = function () {
                     1
                   ),
                   _vm._v(" "),
-                  _vm._m(0),
+                  _c("div", { staticClass: "col-sm-5" }),
                 ]),
               ]),
             ]),
@@ -226,21 +228,7 @@ var render = function () {
     ]),
   ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-5" }, [
-      _c("div", { staticClass: "maintenance-img" }, [
-        _c("img", {
-          staticClass: "img-fluid mx-auto d-block",
-          attrs: { src: "/icons/401.png", alt: "" },
-        }),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

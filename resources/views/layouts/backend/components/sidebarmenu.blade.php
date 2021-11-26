@@ -13,6 +13,8 @@ $sidebar=sideBarMenu();
             @endif
             {{-- <li class="menu-title" data-key="t-apps">Apps</li> --}}
             @if(!empty($menu['menu']))
+
+            @if(auth()->user()->can($menu['menu']['can']))
             <li>
                 <a href="javascript: void(0);" class="has-arrow">
                     <i data-feather="{{$menu['menu']['icon']}}"></i>
@@ -31,6 +33,7 @@ $sidebar=sideBarMenu();
 
               </ul>
             </li>
+            @endif
           @endif
           @if(!empty($menu['single_link']))
           <li>

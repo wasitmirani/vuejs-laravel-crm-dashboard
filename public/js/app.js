@@ -2122,6 +2122,13 @@ vue__WEBPACK_IMPORTED_MODULE_4__["default"].use((vuesax__WEBPACK_IMPORTED_MODULE
 //  files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 vue__WEBPACK_IMPORTED_MODULE_4__["default"].component('avatar-component', (__webpack_require__(/*! ./components/backend/components/avatarComponent.vue */ "./resources/js/components/backend/components/avatarComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_4__["default"].directive('can', function (el, binding, vnode) {
+  if (permissions.indexOf(binding.value) !== -1) {
+    return vnode.elm.hidden = false;
+  } else {
+    return vnode.elm.hidden = true;
+  }
+});
 var app = new vue__WEBPACK_IMPORTED_MODULE_4__["default"]({
   el: '#app',
   router: _router__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -2251,7 +2258,8 @@ var routes = [{
   path: "/unauthorized/user",
   component: function component() {
     return setComponent("error/401");
-  }
+  },
+  name: "unauthorized"
 }, {
   path: "/",
   redirect: {
@@ -2282,11 +2290,22 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   linkExactActiveClass: "exact-active" // short for `
 
 });
-router.beforeResolve(function (to, from, next) {
-  //
+router.beforeEach(function (to, from, next) {
+  console.log(to.meta.permissions);
+
+  if (to.meta.permissions) {
+    if (permissions.indexOf(to.meta.permissions) !== -1) {
+      console.log("not auth");
+      next();
+    } else {
+      next({
+        path: '/unauthorized/user'
+      });
+      console.log(" auth");
+    }
+  }
+
   next();
-});
-router.afterEach(function (to, from) {// setTimeout(function() { $('.page-loader-wrapper').fadeOut(); }, 50);
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
 
