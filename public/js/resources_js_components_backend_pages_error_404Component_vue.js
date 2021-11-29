@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -129,7 +129,7 @@ var render = function () {
             _vm._m(0),
             _vm._v(" "),
             _c("h4", { staticClass: "text-uppercase mt-5" }, [
-              _vm._v("Sorry, page not found"),
+              _vm._v("Sorry, page not found")
             ]),
             _vm._v(" "),
             _c(
@@ -140,28 +140,28 @@ var render = function () {
                   "router-link",
                   {
                     staticClass: "btn btn-primary waves-effect waves-light",
-                    attrs: { to: "/" },
+                    attrs: { to: "/" }
                   },
                   [_vm._v("Back to Dashboard")]
-                ),
+                )
               ],
               1
-            ),
-          ]),
-        ]),
-      ]),
-    ]),
+            )
+          ])
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", { staticClass: "error-title mt-5" }, [
-      _c("span", [_vm._v("404!")]),
+      _c("span", [_vm._v("404!")])
     ])
-  },
+  }
 ]
 render._withStripped = true
 

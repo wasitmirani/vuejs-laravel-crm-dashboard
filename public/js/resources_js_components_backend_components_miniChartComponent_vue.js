@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -168,21 +168,21 @@ var render = function () {
               "span",
               {
                 staticClass: "counter-value",
-                attrs: { "data-target": this.series[0].value },
+                attrs: { "data-target": this.series[0].value }
               },
               [_vm._v(_vm._s(this.series[0].value))]
-            ),
+            )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "text-nowrap" }, [
             _c("span", { staticClass: "badge bg-soft-primary text-primary" }, [
-              _vm._v(_vm._s(this.series[1].value)),
+              _vm._v(_vm._s(this.series[1].value))
             ]),
             _vm._v(" "),
             _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
-              _vm._v(_vm._s(_vm.label)),
-            ]),
-          ]),
+              _vm._v(_vm._s(_vm.label))
+            ])
+          ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "flex-shrink-0 text-end dash-widget" }, [
@@ -190,12 +190,12 @@ var render = function () {
             staticClass: "apex-charts",
             attrs: {
               id: "mini-chart" + _vm.index,
-              "data-colors": '["#33c38e ", "#1c84ee"]',
-            },
-          }),
-        ]),
-      ]),
-    ]),
+              "data-colors": '["#33c38e ", "#1c84ee"]'
+            }
+          })
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []

@@ -185,7 +185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -202,7 +202,7 @@ var render = function () {
                     { staticClass: "col-12 mt-4" },
                     [
                       _c("h3", { staticClass: "mt-4" }, [
-                        _vm._v("This action is unauthorized."),
+                        _vm._v("This action is unauthorized.")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -210,22 +210,22 @@ var render = function () {
                         {
                           staticClass:
                             "btn mt-4 btn-primary waves-effect waves-light",
-                          attrs: { to: "/" },
+                          attrs: { to: "/" }
                         },
                         [_vm._v("Back to Dashboard")]
-                      ),
+                      )
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-5" }),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ]),
+                  _c("div", { staticClass: "col-sm-5" })
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []

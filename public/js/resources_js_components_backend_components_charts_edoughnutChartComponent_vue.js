@@ -171,7 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -179,16 +179,16 @@ var render = function () {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h4", { staticClass: "card-title mb-0" }, [
-          _vm._v(_vm._s(_vm.title) + " Chart"),
-        ]),
+          _vm._v(_vm._s(_vm.title) + " Chart")
+        ])
       ]),
       _vm._v(" "),
-      _vm._m(0),
-    ]),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -198,11 +198,11 @@ var staticRenderFns = [
         attrs: {
           id: "doughnut-chart",
           "data-colors":
-            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]',
-        },
-      }),
+            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]'
+        }
+      })
     ])
-  },
+  }
 ]
 render._withStripped = true
 

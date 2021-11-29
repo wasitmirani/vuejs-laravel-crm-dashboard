@@ -964,7 +964,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -976,21 +976,21 @@ var render = function () {
             name: "model",
             rawName: "v-model",
             value: _vm.query,
-            expression: "query",
-          },
+            expression: "query"
+          }
         ],
         staticClass: "form-control",
         attrs: { type: "text", id: "default-input", placeholder: _vm.label },
         domProps: { value: _vm.query },
         on: {
           keyup: _vm.searchQuery,
-          input: function ($event) {
+          input: function($event) {
             if ($event.target.composing) {
               return
             }
             _vm.query = $event.target.value
-          },
-        },
+          }
+        }
       }),
       _vm._v(" "),
       _vm.name
@@ -999,10 +999,10 @@ var render = function () {
               "a",
               { attrs: { role: "button" }, on: { click: _vm.searchQuery } },
               [_c("i", { staticClass: "fas fa-search" })]
-            ),
+            )
           ])
-        : _vm._e(),
-    ]),
+        : _vm._e()
+    ])
   ])
 }
 var staticRenderFns = []

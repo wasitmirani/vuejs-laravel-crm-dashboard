@@ -1469,7 +1469,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1477,16 +1477,16 @@ var render = function () {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h4", { staticClass: "card-title mb-0" }, [
-          _vm._v(_vm._s(_vm.title) + " Chart"),
-        ]),
+          _vm._v(_vm._s(_vm.title) + " Chart")
+        ])
       ]),
       _vm._v(" "),
-      _vm._m(0),
-    ]),
+      _vm._m(0)
+    ])
   ])
 }
 var staticRenderFns = [
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1496,11 +1496,11 @@ var staticRenderFns = [
         attrs: {
           id: "doughnut-chart",
           "data-colors":
-            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]',
-        },
-      }),
+            '["#6951ce", "#ffcc5a", "#34c38f", "#16daf1", "#10dae6"]'
+        }
+      })
     ])
-  },
+  }
 ]
 render._withStripped = true
 
@@ -1519,7 +1519,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1527,8 +1527,8 @@ var render = function () {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h4", { staticClass: "card-title mb-0" }, [
-          _vm._v(_vm._s(_vm.title) + " Chart"),
-        ]),
+          _vm._v(_vm._s(_vm.title) + " Chart")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
@@ -1537,11 +1537,11 @@ var render = function () {
           attrs: {
             id: "pie-chart" + _vm.index,
             "data-colors":
-              '["#34c38f", "#0a068c", "#16daf1", "#ffcc5a", "#6951ce"]',
-          },
-        }),
-      ]),
-    ]),
+              '["#34c38f", "#0a068c", "#16daf1", "#ffcc5a", "#6951ce"]'
+          }
+        })
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -1562,7 +1562,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1581,21 +1581,21 @@ var render = function () {
               "span",
               {
                 staticClass: "counter-value",
-                attrs: { "data-target": this.series[0].value },
+                attrs: { "data-target": this.series[0].value }
               },
               [_vm._v(_vm._s(this.series[0].value))]
-            ),
+            )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "text-nowrap" }, [
             _c("span", { staticClass: "badge bg-soft-primary text-primary" }, [
-              _vm._v(_vm._s(this.series[1].value)),
+              _vm._v(_vm._s(this.series[1].value))
             ]),
             _vm._v(" "),
             _c("span", { staticClass: "ms-1 text-muted font-size-13" }, [
-              _vm._v(_vm._s(_vm.label)),
-            ]),
-          ]),
+              _vm._v(_vm._s(_vm.label))
+            ])
+          ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "flex-shrink-0 text-end dash-widget" }, [
@@ -1603,12 +1603,12 @@ var render = function () {
             staticClass: "apex-charts",
             attrs: {
               id: "mini-chart" + _vm.index,
-              "data-colors": '["#33c38e ", "#1c84ee"]',
-            },
-          }),
-        ]),
-      ]),
-    ]),
+              "data-colors": '["#33c38e ", "#1c84ee"]'
+            }
+          })
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -1629,7 +1629,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -1640,11 +1640,11 @@ var render = function () {
           "div",
           {
             staticClass:
-              "page-title-box d-sm-flex align-items-center justify-content-between",
+              "page-title-box d-sm-flex align-items-center justify-content-between"
           },
           [
             _c("h4", { staticClass: "mb-sm-0 font-size-18" }, [
-              _vm._v("Hi, " + _vm._s(_vm.auth_user.name) + " ! "),
+              _vm._v("Hi, " + _vm._s(_vm.auth_user.name) + " ! ")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "page-title-right" }, [
@@ -1652,13 +1652,13 @@ var render = function () {
                 _vm._m(0),
                 _vm._v(" "),
                 _c("li", { staticClass: "breadcrumb-item active" }, [
-                  _vm._v("Welcome, " + _vm._s(_vm.auth_user.name) + "!"),
-                ]),
-              ]),
-            ]),
+                  _vm._v("Welcome, " + _vm._s(_vm.auth_user.name) + "!")
+                ])
+              ])
+            ])
           ]
-        ),
-      ]),
+        )
+      ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
@@ -1672,11 +1672,11 @@ var render = function () {
               index: 1,
               series: [
                 { title: "All Orders", value: 100 },
-                { title: "New Orders", value: 20 },
+                { title: "New Orders", value: 20 }
               ],
-              label: "Since last week",
-            },
-          }),
+              label: "Since last week"
+            }
+          })
         ],
         1
       ),
@@ -1691,11 +1691,11 @@ var render = function () {
               index: 2,
               series: [
                 { title: "All Members", value: 500 },
-                { title: "New Members", value: 10 },
+                { title: "New Members", value: 10 }
               ],
-              label: "Since last month",
-            },
-          }),
+              label: "Since last month"
+            }
+          })
         ],
         1
       ),
@@ -1710,11 +1710,11 @@ var render = function () {
               index: 3,
               series: [
                 { title: "All Customers", value: 100 },
-                { title: "New Members", value: 30 },
+                { title: "New Members", value: 30 }
               ],
-              label: "Since last week",
-            },
-          }),
+              label: "Since last week"
+            }
+          })
         ],
         1
       ),
@@ -1729,14 +1729,14 @@ var render = function () {
               index: 4,
               series: [
                 { title: "All Subscribers", value: 340 },
-                { title: "New Members", value: 90 },
+                { title: "New Members", value: 90 }
               ],
-              label: "Since last week",
-            },
-          }),
+              label: "Since last week"
+            }
+          })
         ],
         1
-      ),
+      )
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
@@ -1754,10 +1754,10 @@ var render = function () {
                 { value: 200, name: "Members" },
                 { value: 40, name: "Customers" },
                 { value: 80, name: "Subscribers" },
-                { value: 20, name: "Daily" },
-              ],
-            },
-          }),
+                { value: 20, name: "Daily" }
+              ]
+            }
+          })
         ],
         1
       ),
@@ -1771,32 +1771,32 @@ var render = function () {
               index: "1",
               data: [
                 { value: 335, name: "Users" },
-                { value: 335, name: "New Users" },
-              ],
-            },
-          }),
+                { value: 335, name: "New Users" }
+              ]
+            }
+          })
         ],
         1
-      ),
+      )
     ]),
     _vm._v(" "),
     _vm._m(1),
     _vm._v(" "),
-    _vm._m(2),
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: "breadcrumb-item" }, [
       _c("a", { attrs: { href: "javascript: void(0);" } }, [
-        _vm._v("Dashboard"),
-      ]),
+        _vm._v("Dashboard")
+      ])
     ])
   },
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -1809,7 +1809,7 @@ var staticRenderFns = [
               { staticClass: "d-flex flex-wrap align-items-center mb-4" },
               [
                 _c("h5", { staticClass: "card-title me-2" }, [
-                  _vm._v("Market Overview"),
+                  _vm._v("Market Overview")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "ms-auto" }, [
@@ -1818,12 +1818,12 @@ var staticRenderFns = [
                       "button",
                       {
                         staticClass: "btn btn-soft-primary btn-sm",
-                        attrs: { type: "button" },
+                        attrs: { type: "button" }
                       },
                       [
                         _vm._v(
-                          "\n                                    ALL\n                                "
-                        ),
+                          "\r\n                                    ALL\r\n                                "
+                        )
                       ]
                     ),
                     _vm._v(" "),
@@ -1831,12 +1831,12 @@ var staticRenderFns = [
                       "button",
                       {
                         staticClass: "btn btn-soft-secondary btn-sm",
-                        attrs: { type: "button" },
+                        attrs: { type: "button" }
                       },
                       [
                         _vm._v(
-                          "\n                                    1M\n                                "
-                        ),
+                          "\r\n                                    1M\r\n                                "
+                        )
                       ]
                     ),
                     _vm._v(" "),
@@ -1844,12 +1844,12 @@ var staticRenderFns = [
                       "button",
                       {
                         staticClass: "btn btn-soft-secondary btn-sm",
-                        attrs: { type: "button" },
+                        attrs: { type: "button" }
                       },
                       [
                         _vm._v(
-                          "\n                                    6M\n                                "
-                        ),
+                          "\r\n                                    6M\r\n                                "
+                        )
                       ]
                     ),
                     _vm._v(" "),
@@ -1857,16 +1857,16 @@ var staticRenderFns = [
                       "button",
                       {
                         staticClass: "btn btn-soft-secondary btn-sm active",
-                        attrs: { type: "button" },
+                        attrs: { type: "button" }
                       },
                       [
                         _vm._v(
-                          "\n                                    1Y\n                                "
-                        ),
+                          "\r\n                                    1Y\r\n                                "
+                        )
                       ]
-                    ),
-                  ]),
-                ]),
+                    )
+                  ])
+                ])
               ]
             ),
             _vm._v(" "),
@@ -1877,10 +1877,10 @@ var staticRenderFns = [
                     staticClass: "apex-charts",
                     attrs: {
                       id: "market-overview",
-                      "data-colors": '["#33c38e ", "#1c84ee"]',
-                    },
-                  }),
-                ]),
+                      "data-colors": '["#33c38e ", "#1c84ee"]'
+                    }
+                  })
+                ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "col-xl-4" }, [
@@ -1892,20 +1892,20 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "avatar-title rounded-circle bg-light text-dark font-size-13",
+                              "avatar-title rounded-circle bg-light text-dark font-size-13"
                           },
                           [
                             _vm._v(
-                              "\n                                                1\n                                            "
-                            ),
+                              "\r\n                                                1\r\n                                            "
+                            )
                           ]
-                        ),
+                        )
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-grow-1 ms-3" }, [
                         _c("span", { staticClass: "font-size-14" }, [
-                          _vm._v("Mobile Phones"),
-                        ]),
+                          _vm._v("Mobile Phones")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-shrink-0" }, [
@@ -1913,12 +1913,12 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium",
+                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium"
                           },
                           [_vm._v("+5.4%")]
-                        ),
-                      ]),
-                    ]),
+                        )
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mt-3" }, [
@@ -1928,20 +1928,20 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "avatar-title rounded-circle bg-light text-dark font-size-13",
+                              "avatar-title rounded-circle bg-light text-dark font-size-13"
                           },
                           [
                             _vm._v(
-                              "\n                                                2\n                                            "
-                            ),
+                              "\r\n                                                2\r\n                                            "
+                            )
                           ]
-                        ),
+                        )
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-grow-1 ms-3" }, [
                         _c("span", { staticClass: "font-size-14" }, [
-                          _vm._v("Smart Watch"),
-                        ]),
+                          _vm._v("Smart Watch")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-shrink-0" }, [
@@ -1949,12 +1949,12 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium",
+                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium"
                           },
                           [_vm._v("+6.8%")]
-                        ),
-                      ]),
-                    ]),
+                        )
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mt-3" }, [
@@ -1964,20 +1964,20 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "avatar-title rounded-circle bg-light text-dark font-size-13",
+                              "avatar-title rounded-circle bg-light text-dark font-size-13"
                           },
                           [
                             _vm._v(
-                              "\n                                                3\n                                            "
-                            ),
+                              "\r\n                                                3\r\n                                            "
+                            )
                           ]
-                        ),
+                        )
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-grow-1 ms-3" }, [
                         _c("span", { staticClass: "font-size-14" }, [
-                          _vm._v("Protable Acoustics"),
-                        ]),
+                          _vm._v("Protable Acoustics")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-shrink-0" }, [
@@ -1985,12 +1985,12 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "badge rounded-pill badge-soft-danger font-size-12 fw-medium",
+                              "badge rounded-pill badge-soft-danger font-size-12 fw-medium"
                           },
                           [_vm._v("-4.9%")]
-                        ),
-                      ]),
-                    ]),
+                        )
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mt-3" }, [
@@ -2000,20 +2000,20 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "avatar-title rounded-circle bg-light text-dark font-size-13",
+                              "avatar-title rounded-circle bg-light text-dark font-size-13"
                           },
                           [
                             _vm._v(
-                              "\n                                                4\n                                            "
-                            ),
+                              "\r\n                                                4\r\n                                            "
+                            )
                           ]
-                        ),
+                        )
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-grow-1 ms-3" }, [
                         _c("span", { staticClass: "font-size-14" }, [
-                          _vm._v("Smart Speakers"),
-                        ]),
+                          _vm._v("Smart Speakers")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-shrink-0" }, [
@@ -2021,12 +2021,12 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium",
+                              "badge rounded-pill badge-soft-warning font-size-12 fw-medium"
                           },
                           [_vm._v("+3.5%")]
-                        ),
-                      ]),
-                    ]),
+                        )
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mt-3" }, [
@@ -2036,20 +2036,20 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "avatar-title rounded-circle bg-light text-dark font-size-13",
+                              "avatar-title rounded-circle bg-light text-dark font-size-13"
                           },
                           [
                             _vm._v(
-                              "\n                                                5\n                                            "
-                            ),
+                              "\r\n                                                5\r\n                                            "
+                            )
                           ]
-                        ),
+                        )
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-grow-1 ms-3" }, [
                         _c("span", { staticClass: "font-size-14" }, [
-                          _vm._v("Camcorders"),
-                        ]),
+                          _vm._v("Camcorders")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "flex-shrink-0" }, [
@@ -2057,12 +2057,12 @@ var staticRenderFns = [
                           "span",
                           {
                             staticClass:
-                              "badge rounded-pill badge-soft-danger font-size-12 fw-medium",
+                              "badge rounded-pill badge-soft-danger font-size-12 fw-medium"
                           },
                           [_vm._v("-0.3%")]
-                        ),
-                      ]),
-                    ]),
+                        )
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "mt-4 pt-2" }, [
@@ -2070,19 +2070,19 @@ var staticRenderFns = [
                       "a",
                       {
                         staticClass: "btn btn-primary w-100",
-                        attrs: { href: "" },
+                        attrs: { href: "" }
                       },
                       [
                         _vm._v("See All Balances "),
-                        _c("i", { staticClass: "mdi mdi-arrow-right ms-1" }),
+                        _c("i", { staticClass: "mdi mdi-arrow-right ms-1" })
                       ]
-                    ),
-                  ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xl-4" }, [
@@ -2093,7 +2093,7 @@ var staticRenderFns = [
               { staticClass: "d-flex flex-wrap align-items-center mb-4" },
               [
                 _c("h5", { staticClass: "card-title me-2" }, [
-                  _vm._v("Sales by Locations"),
+                  _vm._v("Sales by Locations")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "ms-auto" }, [
@@ -2107,18 +2107,18 @@ var staticRenderFns = [
                           id: "dropdownMenuButton1",
                           "data-bs-toggle": "dropdown",
                           "aria-haspopup": "true",
-                          "aria-expanded": "false",
-                        },
+                          "aria-expanded": "false"
+                        }
                       },
                       [
                         _c("span", { staticClass: "text-muted font-size-12" }, [
-                          _vm._v("Sort By:"),
+                          _vm._v("Sort By:")
                         ]),
                         _vm._v(" "),
                         _c("span", { staticClass: "fw-medium" }, [
                           _vm._v("World"),
-                          _c("i", { staticClass: "mdi mdi-chevron-down ms-1" }),
-                        ]),
+                          _c("i", { staticClass: "mdi mdi-chevron-down ms-1" })
+                        ])
                       ]
                     ),
                     _vm._v(" "),
@@ -2126,14 +2126,14 @@ var staticRenderFns = [
                       "div",
                       {
                         staticClass: "dropdown-menu dropdown-menu-end",
-                        attrs: { "aria-labelledby": "dropdownMenuButton1" },
+                        attrs: { "aria-labelledby": "dropdownMenuButton1" }
                       },
                       [
                         _c(
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("USA")]
                         ),
@@ -2142,7 +2142,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Russia")]
                         ),
@@ -2151,33 +2151,33 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Australia")]
-                        ),
+                        )
                       ]
-                    ),
-                  ]),
-                ]),
+                    )
+                  ])
+                ])
               ]
             ),
             _vm._v(" "),
             _c("div", {
               staticStyle: { height: "253px" },
-              attrs: { id: "sales-by-locations", "data-colors": '["#10dae6"]' },
+              attrs: { id: "sales-by-locations", "data-colors": '["#10dae6"]' }
             }),
             _vm._v(" "),
             _c("div", { staticClass: "px-2 py-2" }, [
               _c("p", { staticClass: "mb-1" }, [
                 _vm._v("USA "),
-                _c("span", { staticClass: "float-end" }, [_vm._v("75%")]),
+                _c("span", { staticClass: "float-end" }, [_vm._v("75%")])
               ]),
               _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass: "progress mt-2",
-                  staticStyle: { height: "6px" },
+                  staticStyle: { height: "6px" }
                 },
                 [
                   _c("div", {
@@ -2187,22 +2187,22 @@ var staticRenderFns = [
                       role: "progressbar",
                       "aria-valuenow": "75",
                       "aria-valuemin": "0",
-                      "aria-valuemax": "75",
-                    },
-                  }),
+                      "aria-valuemax": "75"
+                    }
+                  })
                 ]
               ),
               _vm._v(" "),
               _c("p", { staticClass: "mt-3 mb-1" }, [
                 _vm._v("Russia "),
-                _c("span", { staticClass: "float-end" }, [_vm._v("55%")]),
+                _c("span", { staticClass: "float-end" }, [_vm._v("55%")])
               ]),
               _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass: "progress mt-2",
-                  staticStyle: { height: "6px" },
+                  staticStyle: { height: "6px" }
                 },
                 [
                   _c("div", {
@@ -2212,22 +2212,22 @@ var staticRenderFns = [
                       role: "progressbar",
                       "aria-valuenow": "55",
                       "aria-valuemin": "0",
-                      "aria-valuemax": "55",
-                    },
-                  }),
+                      "aria-valuemax": "55"
+                    }
+                  })
                 ]
               ),
               _vm._v(" "),
               _c("p", { staticClass: "mt-3 mb-1" }, [
                 _vm._v("Australia "),
-                _c("span", { staticClass: "float-end" }, [_vm._v("85%")]),
+                _c("span", { staticClass: "float-end" }, [_vm._v("85%")])
               ]),
               _vm._v(" "),
               _c(
                 "div",
                 {
                   staticClass: "progress mt-2",
-                  staticStyle: { height: "6px" },
+                  staticStyle: { height: "6px" }
                 },
                 [
                   _c("div", {
@@ -2237,18 +2237,18 @@ var staticRenderFns = [
                       role: "progressbar",
                       "aria-valuenow": "85",
                       "aria-valuemin": "0",
-                      "aria-valuemax": "85",
-                    },
-                  }),
+                      "aria-valuemax": "85"
+                    }
+                  })
                 ]
-              ),
-            ]),
-          ]),
-        ]),
-      ]),
+              )
+            ])
+          ])
+        ])
+      ])
     ])
   },
-  function () {
+  function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -2257,7 +2257,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header align-items-center d-flex" }, [
             _c("h4", { staticClass: "card-title mb-0 flex-grow-1" }, [
-              _vm._v("Customer List"),
+              _vm._v("Customer List")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex-shrink-0" }, [
@@ -2271,14 +2271,14 @@ var staticRenderFns = [
                       id: "dropdownMenuButton2",
                       "data-bs-toggle": "dropdown",
                       "aria-haspopup": "true",
-                      "aria-expanded": "false",
-                    },
+                      "aria-expanded": "false"
+                    }
                   },
                   [
                     _c("span", { staticClass: "text-muted" }, [
                       _vm._v("All Members"),
-                      _c("i", { staticClass: "mdi mdi-chevron-down ms-1" }),
-                    ]),
+                      _c("i", { staticClass: "mdi mdi-chevron-down ms-1" })
+                    ])
                   ]
                 ),
                 _vm._v(" "),
@@ -2286,7 +2286,7 @@ var staticRenderFns = [
                   "div",
                   {
                     staticClass: "dropdown-menu dropdown-menu-end",
-                    attrs: { "aria-labelledby": "dropdownMenuButton2" },
+                    attrs: { "aria-labelledby": "dropdownMenuButton2" }
                   },
                   [
                     _c(
@@ -2305,11 +2305,11 @@ var staticRenderFns = [
                       "a",
                       { staticClass: "dropdown-item", attrs: { href: "#" } },
                       [_vm._v("Old Members")]
-                    ),
+                    )
                   ]
-                ),
-              ]),
-            ]),
+                )
+              ])
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body px-0" }, [
@@ -2318,7 +2318,7 @@ var staticRenderFns = [
               {
                 staticClass: "px-3",
                 staticStyle: { "max-height": "386px" },
-                attrs: { "data-simplebar": "" },
+                attrs: { "data-simplebar": "" }
               },
               [
                 _c("div", { staticClass: "d-flex align-items-center pb-4" }, [
@@ -2327,9 +2327,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-2.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2338,12 +2338,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Randy Matthews")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Randy@gmail.com"),
-                    ]),
+                      _vm._v("Randy@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2357,14 +2357,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2373,7 +2373,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2382,7 +2382,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2391,7 +2391,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2400,13 +2400,13 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
+                        )
+                      ])
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "d-flex align-items-center pb-4" }, [
@@ -2415,9 +2415,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-4.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2426,12 +2426,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Vernon Wood")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Vernon@gmail.com"),
-                    ]),
+                      _vm._v("Vernon@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2445,14 +2445,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2461,7 +2461,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2470,7 +2470,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2479,7 +2479,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2488,13 +2488,13 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
+                        )
+                      ])
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "d-flex align-items-center pb-4" }, [
@@ -2503,9 +2503,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-5.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2514,12 +2514,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Howard Rhoades")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Howard@gmail.com"),
-                    ]),
+                      _vm._v("Howard@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2533,14 +2533,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2549,7 +2549,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2558,7 +2558,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2567,7 +2567,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2576,13 +2576,13 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
+                        )
+                      ])
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "d-flex align-items-center pb-4" }, [
@@ -2591,9 +2591,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-6.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2602,12 +2602,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Arthur Zurcher")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Arthur@gmail.com"),
-                    ]),
+                      _vm._v("Arthur@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2621,14 +2621,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2637,7 +2637,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2646,7 +2646,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2655,7 +2655,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2664,13 +2664,13 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
+                        )
+                      ])
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "d-flex align-items-center pb-4" }, [
@@ -2679,9 +2679,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-8.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2690,12 +2690,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Angela Palmer")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Angela@gmail.com"),
-                    ]),
+                      _vm._v("Angela@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2709,14 +2709,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2725,7 +2725,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2734,7 +2734,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2743,7 +2743,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2752,13 +2752,13 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
+                        )
+                      ])
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "d-flex align-items-center pb-3" }, [
@@ -2767,9 +2767,9 @@ var staticRenderFns = [
                       staticClass: "img-fluid rounded-circle",
                       attrs: {
                         src: "assets/images/users/avatar-9.jpg",
-                        alt: "",
-                      },
-                    }),
+                        alt: ""
+                      }
+                    })
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-grow-1" }, [
@@ -2778,12 +2778,12 @@ var staticRenderFns = [
                         "a",
                         { staticClass: "text-dark", attrs: { href: "" } },
                         [_vm._v("Dorothy Wimson")]
-                      ),
+                      )
                     ]),
                     _vm._v(" "),
                     _c("span", { staticClass: "text-muted" }, [
-                      _vm._v("Dorothy@gmail.com"),
-                    ]),
+                      _vm._v("Dorothy@gmail.com")
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "flex-shrink-0 text-end" }, [
@@ -2797,14 +2797,14 @@ var staticRenderFns = [
                             role: "button",
                             "data-bs-toggle": "dropdown",
                             "aria-haspopup": "true",
-                            "aria-expanded": "false",
-                          },
+                            "aria-expanded": "false"
+                          }
                         },
                         [
                           _c("i", {
                             staticClass:
-                              "bx bx-dots-vertical-rounded font-size-24 text-dark",
-                          }),
+                              "bx bx-dots-vertical-rounded font-size-24 text-dark"
+                          })
                         ]
                       ),
                       _vm._v(" "),
@@ -2813,7 +2813,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Copy")]
                         ),
@@ -2822,7 +2822,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Save")]
                         ),
@@ -2831,7 +2831,7 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Forward")]
                         ),
@@ -2840,25 +2840,25 @@ var staticRenderFns = [
                           "a",
                           {
                             staticClass: "dropdown-item",
-                            attrs: { href: "#" },
+                            attrs: { href: "#" }
                           },
                           [_vm._v("Delete")]
-                        ),
-                      ]),
-                    ]),
-                  ]),
-                ]),
+                        )
+                      ])
+                    ])
+                  ])
+                ])
               ]
-            ),
-          ]),
-        ]),
+            )
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xl-5" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header align-items-center d-flex" }, [
             _c("h4", { staticClass: "card-title mb-0 flex-grow-1" }, [
-              _vm._v("Selling Products"),
+              _vm._v("Selling Products")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex-shrink-0" }, [
@@ -2872,14 +2872,14 @@ var staticRenderFns = [
                       role: "button",
                       "data-bs-toggle": "dropdown",
                       "aria-haspopup": "true",
-                      "aria-expanded": "false",
-                    },
+                      "aria-expanded": "false"
+                    }
                   },
                   [
                     _c("i", {
                       staticClass:
-                        "bx bx-dots-horizontal-rounded font-size-18 text-dark",
-                    }),
+                        "bx bx-dots-horizontal-rounded font-size-18 text-dark"
+                    })
                   ]
                 ),
                 _vm._v(" "),
@@ -2906,10 +2906,10 @@ var staticRenderFns = [
                     "a",
                     { staticClass: "dropdown-item", attrs: { href: "#" } },
                     [_vm._v("Delete")]
-                  ),
-                ]),
-              ]),
-            ]),
+                  )
+                ])
+              ])
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body px-0 pt-2" }, [
@@ -2918,7 +2918,7 @@ var staticRenderFns = [
               {
                 staticClass: "table-responsive px-3",
                 staticStyle: { "max-height": "395px" },
-                attrs: { "data-simplebar": "" },
+                attrs: { "data-simplebar": "" }
               },
               [
                 _c(
@@ -2933,10 +2933,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-1.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -2946,16 +2946,16 @@ var staticRenderFns = [
                                 "a",
                                 {
                                   staticClass: "text-dark",
-                                  attrs: { href: "" },
+                                  attrs: { href: "" }
                                 },
                                 [_vm._v("Half sleeve T-shirt")]
-                              ),
+                              )
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$240.00"),
-                            ]),
-                          ]),
+                              _vm._v("$240.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -2964,43 +2964,43 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Available")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("243K"),
-                          ]),
+                            _vm._v("243K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
-                              }),
+                                staticClass: "bx bxs-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("145 Sales"),
-                            ]),
-                          ]),
-                        ]),
+                              _vm._v("145 Sales")
+                            ])
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -3010,10 +3010,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-2.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3023,16 +3023,16 @@ var staticRenderFns = [
                                 "a",
                                 {
                                   staticClass: "text-dark",
-                                  attrs: { href: "" },
+                                  attrs: { href: "" }
                                 },
                                 [_vm._v("Light blue T-shirt")]
-                              ),
+                              )
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$650.00"),
-                            ]),
-                          ]),
+                              _vm._v("$650.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3041,43 +3041,43 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Out Of Stock")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("1,253K"),
-                          ]),
+                            _vm._v("1,253K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bx-star text-warning",
-                              }),
+                                staticClass: "bx bx-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("260 Sales"),
-                            ]),
-                          ]),
-                        ]),
+                              _vm._v("260 Sales")
+                            ])
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -3087,10 +3087,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-3.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3100,16 +3100,16 @@ var staticRenderFns = [
                                 "a",
                                 {
                                   staticClass: "text-dark",
-                                  attrs: { href: "" },
+                                  attrs: { href: "" }
                                 },
                                 [_vm._v("Black Color T-shirt")]
-                              ),
+                              )
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$325.00"),
-                            ]),
-                          ]),
+                              _vm._v("$325.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3118,43 +3118,43 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Available")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("2,586K"),
-                          ]),
+                            _vm._v("2,586K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
-                              }),
+                                staticClass: "bx bxs-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("220 Sales"),
-                            ]),
-                          ]),
-                        ]),
+                              _vm._v("220 Sales")
+                            ])
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -3164,10 +3164,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-4.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3175,15 +3175,15 @@ var staticRenderFns = [
                             _c("h5", { staticClass: "font-size-15" }, [
                               _c("a", {
                                 staticClass: "text-dark",
-                                attrs: { href: "" },
+                                attrs: { href: "" }
                               }),
-                              _vm._v("Hoodie (Blue)"),
+                              _vm._v("Hoodie (Blue)")
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$170.00"),
-                            ]),
-                          ]),
+                              _vm._v("$170.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3192,43 +3192,43 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Available")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("4,565K"),
-                          ]),
+                            _vm._v("4,565K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
-                              }),
+                                staticClass: "bx bxs-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("165 Sales"),
-                            ]),
-                          ]),
-                        ]),
+                              _vm._v("165 Sales")
+                            ])
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -3238,10 +3238,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-5.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3249,15 +3249,15 @@ var staticRenderFns = [
                             _c("h5", { staticClass: "font-size-15" }, [
                               _c("a", {
                                 staticClass: "text-dark",
-                                attrs: { href: "" },
+                                attrs: { href: "" }
                               }),
-                              _vm._v("Half sleeve T-Shirt"),
+                              _vm._v("Half sleeve T-Shirt")
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$150.00"),
-                            ]),
-                          ]),
+                              _vm._v("$150.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3266,43 +3266,43 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Out Of Stock")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("5,265K"),
-                          ]),
+                            _vm._v("5,265K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bx-star text-warning",
-                              }),
+                                staticClass: "bx bx-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("165 Sales"),
-                            ]),
-                          ]),
-                        ]),
+                              _vm._v("165 Sales")
+                            ])
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("tr", [
@@ -3312,10 +3312,10 @@ var staticRenderFns = [
                               staticClass: "img-fluid",
                               attrs: {
                                 src: "assets/images/product/img-6.png",
-                                alt: "",
-                              },
-                            }),
-                          ]),
+                                alt: ""
+                              }
+                            })
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3323,15 +3323,15 @@ var staticRenderFns = [
                             _c("h5", { staticClass: "font-size-15" }, [
                               _c("a", {
                                 staticClass: "text-dark",
-                                attrs: { href: "" },
+                                attrs: { href: "" }
                               }),
-                              _vm._v("Green color T-shirt"),
+                              _vm._v("Green color T-shirt")
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted" }, [
-                              _vm._v("$120.00"),
-                            ]),
-                          ]),
+                              _vm._v("$120.00")
+                            ])
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
@@ -3340,58 +3340,58 @@ var staticRenderFns = [
                               "a",
                               { staticClass: "text-dark", attrs: { href: "" } },
                               [_vm._v("Available")]
-                            ),
+                            )
                           ]),
                           _vm._v(" "),
                           _c("span", { staticClass: "text-muted" }, [
-                            _vm._v("125K"),
-                          ]),
+                            _vm._v("125K")
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("td", [
                           _c("div", { staticClass: "text-end" }, [
                             _c("ul", { staticClass: "mb-1 ps-0" }, [
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bxs-star text-warning",
+                                staticClass: "bx bxs-star text-warning"
                               }),
                               _vm._v(" "),
                               _c("li", {
-                                staticClass: "bx bx-star text-warning",
-                              }),
+                                staticClass: "bx bx-star text-warning"
+                              })
                             ]),
                             _vm._v(" "),
                             _c("span", { staticClass: "text-muted mt-1" }, [
-                              _vm._v("165 Sales"),
-                            ]),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
+                              _vm._v("165 Sales")
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
                   ]
-                ),
+                )
               ]
-            ),
-          ]),
-        ]),
+            )
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col-xl-4" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header align-items-center d-flex" }, [
             _c("h4", { staticClass: "card-title mb-0 flex-grow-1" }, [
-              _vm._v("Chat"),
+              _vm._v("Chat")
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex-shrink-0" }, [
@@ -3400,23 +3400,23 @@ var staticRenderFns = [
                 { staticClass: "form-select form-select-sm mb-0 my-n1" },
                 [
                   _c("option", { attrs: { value: "Today", selected: "" } }, [
-                    _vm._v("Today"),
+                    _vm._v("Today")
                   ]),
                   _vm._v(" "),
                   _c("option", { attrs: { value: "Yesterday" } }, [
-                    _vm._v("Yesterday"),
+                    _vm._v("Yesterday")
                   ]),
                   _vm._v(" "),
                   _c("option", { attrs: { value: "Week" } }, [
-                    _vm._v("Last Week"),
+                    _vm._v("Last Week")
                   ]),
                   _vm._v(" "),
                   _c("option", { attrs: { value: "Month" } }, [
-                    _vm._v("Last Month"),
-                  ]),
+                    _vm._v("Last Month")
+                  ])
                 ]
-              ),
-            ]),
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body px-0" }, [
@@ -3425,12 +3425,12 @@ var staticRenderFns = [
               {
                 staticClass: "px-3 chat-conversation",
                 staticStyle: { "max-height": "350px" },
-                attrs: { "data-simplebar": "" },
+                attrs: { "data-simplebar": "" }
               },
               [
                 _c("ul", { staticClass: "list-unstyled mb-0" }, [
                   _c("li", { staticClass: "chat-day-title" }, [
-                    _c("span", { staticClass: "title" }, [_vm._v("Today")]),
+                    _c("span", { staticClass: "title" }, [_vm._v("Today")])
                   ]),
                   _vm._v(" "),
                   _c("li", [
@@ -3440,8 +3440,8 @@ var staticRenderFns = [
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-3.jpg",
-                            alt: "",
-                          },
+                            alt: ""
+                          }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "flex-1" }, [
@@ -3449,13 +3449,13 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:00 AM"),
-                                ]),
+                                  _vm._v("10:00 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
-                                _vm._v("Good Morning"),
-                              ]),
+                                _vm._v("Good Morning")
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3471,14 +3471,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3487,7 +3486,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3496,7 +3495,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3505,7 +3504,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3514,17 +3513,17 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "right" }, [
@@ -3535,13 +3534,13 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:02 AM"),
-                                ]),
+                                  _vm._v("10:02 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
-                                _vm._v("Good morning"),
-                              ]),
+                                _vm._v("Good morning")
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3557,14 +3556,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3573,7 +3571,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3582,7 +3580,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3591,7 +3589,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3600,25 +3598,25 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
+                            )
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("img", {
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-6.jpg",
-                            alt: "",
-                          },
-                        }),
-                      ]),
-                    ]),
+                            alt: ""
+                          }
+                        })
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", [
@@ -3628,8 +3626,8 @@ var staticRenderFns = [
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-3.jpg",
-                            alt: "",
-                          },
+                            alt: ""
+                          }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "flex-1" }, [
@@ -3637,15 +3635,15 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:04 AM"),
-                                ]),
+                                  _vm._v("10:04 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\n                                                        Hi there, How are you?\n                                                    "
-                                ),
-                              ]),
+                                  "\r\n                                                        Hi there, How are you?\r\n                                                    "
+                                )
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3661,14 +3659,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3677,7 +3674,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3686,7 +3683,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3695,7 +3692,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3704,15 +3701,15 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
-                        ]),
+                            )
+                          ])
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "d-flex" }, [
@@ -3720,8 +3717,8 @@ var staticRenderFns = [
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-3.jpg",
-                            alt: "",
-                          },
+                            alt: ""
+                          }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "flex-1" }, [
@@ -3729,15 +3726,15 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:04 AM"),
-                                ]),
+                                  _vm._v("10:04 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\n                                                        Waiting for your reply.As I heve to go back soon. i have to travel long distance.\n                                                    "
-                                ),
-                              ]),
+                                  "\r\n                                                        Waiting for your reply.As I heve to go back soon. i have to travel long distance.\r\n                                                    "
+                                )
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3753,14 +3750,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3769,7 +3765,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3778,7 +3774,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3787,7 +3783,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3796,17 +3792,17 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", { staticClass: "right" }, [
@@ -3817,15 +3813,15 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:08 AM"),
-                                ]),
+                                  _vm._v("10:08 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\n                                                        Hi, I am coming there in few minutes. Please wait!! I am in taxi right now.\n                                                    "
-                                ),
-                              ]),
+                                  "\r\n                                                        Hi, I am coming there in few minutes. Please wait!! I am in taxi right now.\r\n                                                    "
+                                )
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3841,14 +3837,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3857,7 +3852,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3866,7 +3861,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3875,7 +3870,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3884,25 +3879,25 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
+                            )
+                          ])
                         ]),
                         _vm._v(" "),
                         _c("img", {
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-6.jpg",
-                            alt: "",
-                          },
-                        }),
-                      ]),
-                    ]),
+                            alt: ""
+                          }
+                        })
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", [
@@ -3912,8 +3907,8 @@ var staticRenderFns = [
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-3.jpg",
-                            alt: "",
-                          },
+                            alt: ""
+                          }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "flex-1" }, [
@@ -3921,15 +3916,15 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:06 AM"),
-                                ]),
+                                  _vm._v("10:06 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\n                                                        Thank You very much, I am waiting here at StarBuck cafe.\n                                                    "
-                                ),
-                              ]),
+                                  "\r\n                                                        Thank You very much, I am waiting here at StarBuck cafe.\r\n                                                    "
+                                )
+                              ])
                             ]),
                             _vm._v(" "),
                             _c(
@@ -3945,14 +3940,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -3961,7 +3955,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -3970,7 +3964,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -3979,7 +3973,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -3988,17 +3982,17 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ]),
                   _vm._v(" "),
                   _c("li", [
@@ -4008,8 +4002,8 @@ var staticRenderFns = [
                           staticClass: "rounded-circle avatar-sm",
                           attrs: {
                             src: "assets/images/users/avatar-3.jpg",
-                            alt: "",
-                          },
+                            alt: ""
+                          }
                         }),
                         _vm._v(" "),
                         _c("div", { staticClass: "flex-1" }, [
@@ -4017,47 +4011,48 @@ var staticRenderFns = [
                             _c("div", { staticClass: "ctext-wrap-content" }, [
                               _c("div", { staticClass: "conversation-name" }, [
                                 _c("span", { staticClass: "time" }, [
-                                  _vm._v("10:09 AM"),
-                                ]),
+                                  _vm._v("10:09 AM")
+                                ])
                               ]),
                               _vm._v(" "),
                               _c("p", { staticClass: "mb-0" }, [
                                 _vm._v(
-                                  "\n                                                        img-1.jpg & img-2.jpg images for a New Projects\n                                                    "
-                                ),
+                                  "\r\n                                                        img-1.jpg & img-2.jpg images for a New Projects\r\n                                                    "
+                                )
                               ]),
                               _vm._v(" "),
                               _c(
                                 "ul",
                                 {
                                   staticClass:
-                                    "list-inline message-img mt-3  mb-0",
+                                    "list-inline message-img mt-3  mb-0"
                                 },
                                 [
                                   _c(
                                     "li",
                                     {
                                       staticClass:
-                                        "list-inline-item message-img-list",
+                                        "list-inline-item message-img-list"
                                     },
                                     [
                                       _c(
                                         "a",
                                         {
                                           staticClass: "d-inline-block m-1",
-                                          attrs: { href: "" },
+                                          attrs: { href: "" }
                                         },
                                         [
                                           _c("img", {
                                             staticClass:
                                               "rounded img-thumbnail",
                                             attrs: {
-                                              src: "assets/images/small/img-1.jpg",
-                                              alt: "",
-                                            },
-                                          }),
+                                              src:
+                                                "assets/images/small/img-1.jpg",
+                                              alt: ""
+                                            }
+                                          })
                                         ]
-                                      ),
+                                      )
                                     ]
                                   ),
                                   _vm._v(" "),
@@ -4065,30 +4060,31 @@ var staticRenderFns = [
                                     "li",
                                     {
                                       staticClass:
-                                        "list-inline-item message-img-list",
+                                        "list-inline-item message-img-list"
                                     },
                                     [
                                       _c(
                                         "a",
                                         {
                                           staticClass: "d-inline-block m-1",
-                                          attrs: { href: "" },
+                                          attrs: { href: "" }
                                         },
                                         [
                                           _c("img", {
                                             staticClass:
                                               "rounded img-thumbnail",
                                             attrs: {
-                                              src: "assets/images/small/img-2.jpg",
-                                              alt: "",
-                                            },
-                                          }),
+                                              src:
+                                                "assets/images/small/img-2.jpg",
+                                              alt: ""
+                                            }
+                                          })
                                         ]
-                                      ),
+                                      )
                                     ]
-                                  ),
+                                  )
                                 ]
-                              ),
+                              )
                             ]),
                             _vm._v(" "),
                             _c(
@@ -4104,14 +4100,13 @@ var staticRenderFns = [
                                       role: "button",
                                       "data-bs-toggle": "dropdown",
                                       "aria-haspopup": "true",
-                                      "aria-expanded": "false",
-                                    },
+                                      "aria-expanded": "false"
+                                    }
                                   },
                                   [
                                     _c("i", {
-                                      staticClass:
-                                        "bx bx-dots-vertical-rounded",
-                                    }),
+                                      staticClass: "bx bx-dots-vertical-rounded"
+                                    })
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -4120,7 +4115,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Copy")]
                                   ),
@@ -4129,7 +4124,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Save")]
                                   ),
@@ -4138,7 +4133,7 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Forward")]
                                   ),
@@ -4147,19 +4142,19 @@ var staticRenderFns = [
                                     "a",
                                     {
                                       staticClass: "dropdown-item",
-                                      attrs: { href: "#" },
+                                      attrs: { href: "#" }
                                     },
                                     [_vm._v("Delete")]
-                                  ),
-                                ]),
+                                  )
+                                ])
                               ]
-                            ),
-                          ]),
-                        ]),
-                      ]),
-                    ]),
-                  ]),
-                ]),
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
               ]
             ),
             _vm._v(" "),
@@ -4169,9 +4164,9 @@ var staticRenderFns = [
                   _c("div", { staticClass: "position-relative" }, [
                     _c("input", {
                       staticClass: "form-control border bg-soft-light",
-                      attrs: { type: "text", placeholder: "Enter Message..." },
-                    }),
-                  ]),
+                      attrs: { type: "text", placeholder: "Enter Message..." }
+                    })
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "col-auto" }, [
@@ -4180,7 +4175,7 @@ var staticRenderFns = [
                     {
                       staticClass:
                         "btn btn-primary chat-send w-md waves-effect waves-light",
-                      attrs: { type: "submit" },
+                      attrs: { type: "submit" }
                     },
                     [
                       _c(
@@ -4189,17 +4184,17 @@ var staticRenderFns = [
                         [_vm._v("Send")]
                       ),
                       _vm._v(" "),
-                      _c("i", { staticClass: "mdi mdi-send float-end" }),
+                      _c("i", { staticClass: "mdi mdi-send float-end" })
                     ]
-                  ),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]),
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
     ])
-  },
+  }
 ]
 render._withStripped = true
 

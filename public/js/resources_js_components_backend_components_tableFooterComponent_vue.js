@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -119,8 +119,8 @@ var render = function () {
           attrs: {
             id: "datatable-buttons_info",
             role: "status",
-            "aria-live": "polite",
-          },
+            "aria-live": "polite"
+          }
         },
         [
           _vm._v(
@@ -131,10 +131,10 @@ var render = function () {
               " of " +
               _vm._s(_vm.table.total) +
               " entries\n      "
-          ),
+          )
         ]
-      ),
-    ]),
+      )
+    ])
   ])
 }
 var staticRenderFns = []

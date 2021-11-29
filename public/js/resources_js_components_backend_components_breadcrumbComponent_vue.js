@@ -132,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -143,11 +143,11 @@ var render = function () {
           "div",
           {
             staticClass:
-              "page-title-box d-sm-flex align-items-center justify-content-between",
+              "page-title-box d-sm-flex align-items-center justify-content-between"
           },
           [
             _c("h4", { staticClass: "mb-sm-0 font-size-18" }, [
-              _vm._v(_vm._s(_vm.active_name)),
+              _vm._v(_vm._s(_vm.active_name))
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "page-title-right" }, [
@@ -160,36 +160,36 @@ var render = function () {
                     { staticClass: "breadcrumb-item" },
                     [
                       _c("router-link", { attrs: { to: "/" } }, [
-                        _vm._v("Dashboard"),
-                      ]),
+                        _vm._v("Dashboard")
+                      ])
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _vm._l(_vm.previous, function (item) {
+                  _vm._l(_vm.previous, function(item) {
                     return _c(
                       "li",
                       { key: item.id, staticClass: "breadcrumb-item" },
                       [
                         _c("router-link", { attrs: { to: item.link } }, [
-                          _vm._v(_vm._s(item.name)),
-                        ]),
+                          _vm._v(_vm._s(item.name))
+                        ])
                       ],
                       1
                     )
                   }),
                   _vm._v(" "),
                   _c("li", { staticClass: "breadcrumb-item active" }, [
-                    _vm._v(_vm._s(_vm.active_name)),
-                  ]),
+                    _vm._v(_vm._s(_vm.active_name))
+                  ])
                 ],
                 2
-              ),
-            ]),
+              )
+            ])
           ]
-        ),
-      ]),
-    ]),
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = []

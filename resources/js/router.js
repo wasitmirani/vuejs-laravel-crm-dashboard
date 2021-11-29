@@ -10,7 +10,7 @@ function setComponent(path_file) {
 }
 const routes = [
     { path: "*", component: () => setComponent("error/404") },
-    { path: "/unauthorized/user", component: () => setComponent("error/401"),name: "unauthorized" },
+    { path: "/unauthorized/user", component: () => setComponent("error/401"), name: "unauthorized" },
     {
         path: "/",
         redirect: { path: '/dashboard' }
@@ -30,26 +30,32 @@ const routes = [
 
 const router = new VueRouter({
     routes,
+    scrollBehavior(to, from, savedPosition) {
+        if (to.hash) {
+            return {
+                selector: to.hash,
+                behavior: 'smooth',
+            }
+        }
+    },
     linkActiveClass: "active",
     linkExactActiveClass: "exact-active" // short for `
 });
 
 router.beforeEach((to, from, next) => {
     console.log(to.meta.permissions)
-    if(to.meta.permissions){
-        if (permissions.indexOf(to.meta.permissions) !== -1)
-        {
+    if (to.meta.permissions) {
+        if (permissions.indexOf(to.meta.permissions) !== -1) {
             console.log("not auth");
             next()
 
         }
-        else{
-            next({path:'/unauthorized/user' })
+        else {
+            next({ path: '/unauthorized/user' })
             console.log(" auth");
         }
     }
-
     next()
 
-  })
+})
 export default router;

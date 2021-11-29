@@ -176,7 +176,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function () {
+var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -184,8 +184,8 @@ var render = function () {
     _c("div", { staticClass: "card" }, [
       _c("div", { staticClass: "card-header" }, [
         _c("h4", { staticClass: "card-title mb-0" }, [
-          _vm._v(_vm._s(_vm.title) + " Chart"),
-        ]),
+          _vm._v(_vm._s(_vm.title) + " Chart")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
@@ -194,11 +194,11 @@ var render = function () {
           attrs: {
             id: "pie-chart" + _vm.index,
             "data-colors":
-              '["#34c38f", "#0a068c", "#16daf1", "#ffcc5a", "#6951ce"]',
-          },
-        }),
-      ]),
-    ]),
+              '["#34c38f", "#0a068c", "#16daf1", "#ffcc5a", "#6951ce"]'
+          }
+        })
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
