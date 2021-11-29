@@ -23,7 +23,7 @@ class HelperComponent
 
                 "menu" => [
                     "title" => 'User Management',
-                    'can'=>'user-management-view',
+                    'can'=>'user-management-dropdown',
                     "icon" => "user",
                     "sub_menu" => [
                         setSubMenu(

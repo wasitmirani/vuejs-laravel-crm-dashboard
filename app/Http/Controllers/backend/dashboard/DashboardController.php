@@ -13,7 +13,7 @@ class DashboardController extends Controller
         $this->middleware('auth');
     }
     public function index(Request $request){
-        dd(auth()->user());
+  
         return view('backend.pages.index');
     }
     public function unauthorized(Request $request){

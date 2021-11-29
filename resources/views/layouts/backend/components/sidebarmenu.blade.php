@@ -14,8 +14,8 @@ $sidebar=sideBarMenu();
             {{-- <li class="menu-title" data-key="t-apps">Apps</li> --}}
             @if(!empty($menu['menu']))
 
-            @if(auth()->user()->can($menu['menu']['can']))
-            <li>
+
+            <li @if(isset($menu['menu']['can'])) v-can="'{{$menu['menu']['can']}}'" @endif>
                 <a href="javascript: void(0);" class="has-arrow">
                     <i data-feather="{{$menu['menu']['icon']}}"></i>
                     <span data-key="t-ecommerce">{{$menu['menu']['title']}}</span>
@@ -33,7 +33,7 @@ $sidebar=sideBarMenu();
 
               </ul>
             </li>
-            @endif
+
           @endif
           @if(!empty($menu['single_link']))
           <li>
